@@ -9,7 +9,12 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "build/index.js"
+      "dest": "build/index.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type"
+      }
     }
   ]
 } 

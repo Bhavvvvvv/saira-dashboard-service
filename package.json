@@ -2,12 +2,12 @@
   "name": "ai_dashboard",
   "version": "1.0.0",
   "description": "Sales calls data management system",
-  "main": "build/index.js",
+  "main": "api/index.js",
   "scripts": {
     "start": "node build/index.js",
     "dev": "nodemon src/index.ts",
-    "build": "tsc",
-    "vercel-build": "tsc",
+    "build": "tsc && mkdir -p public && touch public/.gitkeep",
+    "vercel-build": "tsc && mkdir -p public && touch public/.gitkeep",
     "watch-ts": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
